@@ -9,42 +9,57 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Ecommerce Website</title>
   </head>
   <body>
     <div class="container-fluid pb-1 bg-green">
-        <div class="container">
-            <div class="row d-flex align-items-center">
-                <div class="col-lg-8 menu-1">
-                    <a href="" class="active"><i class="fa-solid fa-house"></i> Home</a>
-                    <a href=""><i class="fa-solid fa-user"></i> My Account</a>
-                    <a href=""><i class="fa-solid fa-cart-shopping"></i> Shopping Cart</a>
-                    <a href=""><i class="fa-solid fa-cart-shopping"></i> Checkout</a>
+        <div class="container d-flex">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-green">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto pt-2">
+                    <li class="nav-item active">
+                      <a class="nav-link active" href="#"><i class="fa-solid fa-house"></i> Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#"><i class="fa-solid fa-user"></i> My Account</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i> Shopping Cart</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#"><i class="fa-solid fa-check"></i> Checkout</a>
+                    </li>
+                  </ul>
                 </div>
-                <div class="col-lg-4 d-flex justify-content-end">
-                    <div class="dropdown mr-2">
-                        <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                         <img src="./images/england.png" alt=""> English
-                        </button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                      </div>
-                      <div class="dropdown">
-                        <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                         <span class="bg-green text-white px-1">$</span> Dollar
-                        </button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                      </div>
+              </nav>
+              <li class="nav-item active dropdown ml-auto pt-2">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="./images/england.png" alt=""> English
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
                 </div>
-            </div>
+              </li>
+              <li class="nav-item active dropdown pt-2">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="bg-green text-white px-1">$</span> Dollar
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
         </div>
     </div>
     <div class="container-fluid py-3">
@@ -64,16 +79,16 @@
         </div>
     </div>
     <div class="container-fluid bg-grey py-2">
-        <div class="container d-flex align-items-center justify-content-between menu-2">
+        <div class="container d-flex align-items-center justify-content-lg-between justify-content-center menu-2 flex-wrap">
             <a href="">SMART PHONE</a>
             <a href="" class="active">DESKTOP</a>
             <a href="">LAPTOP</a>
             <a href="">ACCESSORIES</a>
             <a href="">NETWORKING</a>
             <a href="">SOFTWARE</a>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control rounded-left search" type="search" placeholder="Search Your Item......" aria-label="Search">
-                <button class="btn btn-success search rounded-right my-2 my-sm-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <form class="form-inline search-form my-2 my-lg-0">
+                <input class="form-control rounded-left search search-input" type="search" placeholder="Search Your Item......" aria-label="Search">
+                <button class="btn btn-success search rounded-right my-2 my-sm-0 search-icon" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
               </form>
         </div>
     </div>
@@ -111,8 +126,8 @@
     <div class="container-fluid bg-green py-2">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
-                    <div class="bg-light-green d-flex align-items-center  py-2 px-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="bg-light-green d-flex align-items-center  py-2 px-4 item-1">
                         <div class="tele-icon mr-3">
                             <img src="./images/telegram icon.png" alt="">
                         </div>
@@ -122,8 +137,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="bg-light-green d-flex align-items-center  py-2 px-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="bg-light-green d-flex align-items-center  py-2 px-4 item-1">
                         <div class="tele-icon mr-3">
                             <img src="./images/lock.png" alt="">
                         </div>
@@ -133,8 +148,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="bg-light-green d-flex align-items-center  py-2 px-4">
+                <div class="col-lg-3 col-md-6 ">
+                    <div class="bg-light-green d-flex align-items-center  py-2 px-4 item-1">
                         <div class="tele-icon mr-3">
                             <img src="./images/save time.png" alt="">
                         </div>
@@ -144,8 +159,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="bg-light-green d-flex align-items-center  py-2 px-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="bg-light-green d-flex align-items-center  py-2 px-4 item-1">
                         <div class="tele-icon mr-3">
                             <img src="./images/shopping.png" alt="">
                         </div>
@@ -166,21 +181,36 @@
               <button class="filter text-uppercase"  data-filter="app">Top Seller</button>
               <button class="filter text-uppercase"  data-filter="icon">Top Ratting</button>
           </div>
-          <div class="row" id="items">
-            <div class="item col-lg-4 col-md-6 col-12" data-category="web">
-                <img src="./images/filter image.png" alt="Web Image">
-                <div class="add-cart d-flex bg-green align-items-center py-3 justify-content-center">
-                    <h4 class="mt-2"><i class="fa-solid fa-cart-shopping"></i> Add to cart</h4>
-                    <i class="fa-solid fa-pen-to-square"></i>
-                    <img src="./images/2 arroy.png" alt="">
+          <div class="row filter-box d-flex justify-content-center align-items-center" id="items">
+            <div class="items col-lg-4 col-md-6 col-12" data-category="web">
+                <img src="./images/filter image.png" alt="Web Image" class="img-fluid">
+                <div class="add-cart bg-grey-2 py-3">
+                    <h5><strike class="mr-2">$10000</strike><span class="text-success">$8000</span></h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
                     <h3 class="border">Smart Phone Primon v1</h3>
+
+                </div>
+                <div class="add-cart-2">
+                    <div class="add-cart d-flex bg-green align-items-center py-3 justify-content-center">
+                        <h4 class="mt-2 mx-2"><i class="fa-solid fa-cart-shopping"></i> <span>Add to Cart</span></h4>
+                        <h4 class="mt-2 mx-2"><i class="fa-solid fa-pen-to-square"></i> </h4>                       
+                        <h4 class="mt-2"><i class="fa-solid fa-arrow-right-arrow-left"></i> </h4>
+        
+                        <h3 class="border">Smart Phone Primon v1</h3>
+                    </div>
+                    <!-- <div class="offer">
+                        <p>NEW</p>
+                    </div> -->
                 </div>
             </div>
-            <div class="item col-lg-4 col-md-6 col-12" data-category="app">
-                <img src="./images/filter 2.png" alt="Web Image">
-                <div class="offer">
-                    <p>-20%</p>
-                </div>
+            <div class="items col-lg-4 col-md-6 col-12" data-category="app">
+                <img src="./images/filter 2.png" alt="Web Image" class="img-fluid">
                 
                 <div class="add-cart bg-grey-2 py-3">
                     <h5><strike class="mr-2">$10000</strike><span class="text-success">$8000</span></h5>
@@ -194,9 +224,21 @@
                     <h3 class="border">Smart Phone Primon v1</h3>
 
                 </div>
+                <div class="add-cart-2">
+                    <div class="add-cart d-flex bg-green align-items-center py-3 justify-content-center">
+                        <h4 class="mt-2 mx-2"><i class="fa-solid fa-cart-shopping"></i> <span>Add to Cart</span></h4>
+                        <h4 class="mt-2 mx-2"><i class="fa-solid fa-pen-to-square"></i> </h4>                       
+                        <h4 class="mt-2"><i class="fa-solid fa-arrow-right-arrow-left"></i> </h4>
+        
+                        <h3 class="border">Smart Phone Primon v1</h3>
+                    </div>
+                    <div class="offer">
+                        <p>-20%</p>
+                    </div>
+                </div>
             </div>
-            <div class="item col-lg-4 col-md-6 col-12" data-category="icon">
-                <img src="./images/filter 3.png" alt="Web Image">
+            <div class="items col-lg-4 col-md-6 col-12" data-category="icon">
+                <img src="./images/filter 3.png" alt="Web Image" class="img-fluid">
                 
                 <div class="add-cart bg-grey-2 py-3">
                     <h5><span class="text-success">$10299</span></h5>
@@ -209,6 +251,18 @@
                     </div>
                     <h3 class="border">Smart Phone Primon v1</h3>
                 </div>
+                <div class="add-cart-2">
+                    <div class="add-cart d-flex bg-green align-items-center py-3 justify-content-center">
+                        <h4 class="mt-2 mx-2"><i class="fa-solid fa-cart-shopping"></i> <span>Add to Cart</span></h4>
+                        <h4 class="mt-2 mx-2"><i class="fa-solid fa-pen-to-square"></i> </h4>                       
+                        <h4 class="mt-2"><i class="fa-solid fa-arrow-right-arrow-left"></i> </h4>
+        
+                        <h3 class="border">Smart Phone Primon v1</h3>
+                    </div>
+                    <!-- <div class="offer">
+                        <p>NEW</p>
+                    </div> -->
+                </div>
             </div>
         </div>
         </div>
@@ -216,9 +270,9 @@
 
       <div class="container-fluid my-2">
         <div class="container border p-2 offer-section">
-            <div class="row">
+            <div class="row text-lg-left text-center">
                 <div class="col-lg-6">
-                    <img src="./images/phone image.png" alt="">
+                    <img src="./images/phone image.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-lg-6 phone-dec">
                     <h1>50% OFF</h1>
@@ -226,7 +280,7 @@
                     <p>power packed performance</p>
                     <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quas provident adipisci natus, exercitationem deleniti!</p>
                     <div class="time mt-3">
-                        <div class="timer d-flex ">
+                        <div class="timer d-flex justify-content-lg-start justify-content-center">
                             <div class="box">
                                 <span class='e-m-days'>24</span>
                                 <p class="text-white">Days</p>
@@ -266,125 +320,486 @@
         </div>
       </div>
 
-      <section class="py-5">
-        <div class="container my-3 text-center">
+      <div class="container-fluid py-3">
+        <div class="container text-center my-3">
             <div class="filter-section bg-green my-4 pt-2">
-              <button class="filter active text-uppercase" data-filter="all">Laptop</button>
-          </div>
-          <div class="row" id="items">
-            <div class="item col-lg-4 col-md-6 col-12" data-category="web">
-                <img src="./images/filter 4.png" alt="Web Image">
-                <div class="add-cart bg-grey-2 py-3">
-                    <h5><span class="text-success">$10299</span></h5>
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>                     
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                    <h3 class="border">Smart Phone Primon v1</h3>
-                </div>
+                <button class="text-uppercase laptop-btn">Laptop</button>
             </div>
-            <div class="item col-lg-4 col-md-6 col-12" data-category="app">
-                <img src="./images/filter5.png" alt="Web Image">
-                <div class="offer">
-                    <p>-20%</p>
-                </div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="./images/filter 4.png" alt="Web Image">
                 
-                <div class="add-cart d-flex bg-green align-items-center py-3 justify-content-center">
-                    <h4 class="mt-2"><i class="fa-solid fa-cart-shopping"></i></h4>
-                    <h4 class="mt-2 mx-3"><i class="fa-solid fa-pen-to-square"></i>Add to wishlist</h4>
-                    <img src="./images/2 arroy.png" alt="">
-                    <h3 class="border">Smart Phone Primon v1</h3>
-                </div>
-            </div>
-            <div class="item col-lg-4 col-md-6 col-12" data-category="icon">
-                <img src="./images/filter7.png" alt="Web Image">
-                
-                <div class="add-cart bg-grey-2 py-3">
-                    <h5><span class="text-success">$10299</span></h5>
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
+                    <div class="add-cart bg-grey-2 py-3">
+                        <h5><span class="text-success">$10299</span></h5>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3 class="border">Smart Phone Primon v1</h3>
                     </div>
-                    <h3 class="border">Smart Phone Primon v1</h3>
+                    <div class="add-cart-2">
+                        <div class="add-cart d-flex bg-green align-items-center py-3 justify-content-center">
+                            <h4 class="mt-2 mx-2"><i class="fa-solid fa-cart-shopping"></i> </h4>
+                            <h4 class="mt-2 mx-2"><i class="fa-solid fa-pen-to-square"></i> <span>Add to Wishlist</span></h4>                       
+                            <h4 class="mt-2"><i class="fa-solid fa-arrow-right-arrow-left"></i></h4>
+            
+                            <h3 class="border">Smart Phone Primon v1</h3>
+                        </div>
+                        <!-- <div class="offer offer-2">
+                            <p>NEW</p>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/filter5.png" alt="Web Image">
+                
+                    <div class="add-cart bg-grey-2 py-3">
+                        <h5><span class="text-success">$10299</span></h5>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3 class="border">Smart Phone Primon v1</h3>
+                    </div>
+                    <div class="add-cart-2">
+                        <div class="add-cart d-flex bg-green align-items-center py-3 justify-content-center">
+                            <h4 class="mt-2 mx-2"><i class="fa-solid fa-cart-shopping"></i> </h4>
+                            <h4 class="mt-2 mx-2"><i class="fa-solid fa-pen-to-square"></i> <span>Add to Wishlist</span></h4>                       
+                            <h4 class="mt-2"><i class="fa-solid fa-arrow-right-arrow-left"></i></h4>
+            
+                            <h3 class="border">Smart Phone Primon v1</h3>
+                        </div>
+                        <div class="offer offer-2">
+                            <p>-20%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="./images/filter7.png" alt="Web Image">
+                
+                    <div class="add-cart bg-grey-2 py-3">
+                        <h5><span class="text-success">$10299</span></h5>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3 class="border">Smart Phone Primon v1</h3>
+                    </div>
+                    <div class="add-cart-2">
+                        <div class="add-cart d-flex bg-green align-items-center py-3 justify-content-center">
+                            <h4 class="mt-2 mx-2"><i class="fa-solid fa-cart-shopping"></i> </h4>
+                            <h4 class="mt-2 mx-2"><i class="fa-solid fa-pen-to-square"></i> <span>Add to Wishlist</span></h4>                       
+                            <h4 class="mt-2"><i class="fa-solid fa-arrow-right-arrow-left"></i></h4>
+            
+                            <h3 class="border">Smart Phone Primon v1</h3>
+                        </div>
+                        <!-- <div class="offer">
+                            <p>NEW</p>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/filter 4.png" alt="Web Image">
+                
+                    <div class="add-cart bg-grey-2 py-3">
+                        <h5><span class="text-success">$10299</span></h5>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3 class="border">Smart Phone Primon v1</h3>
+                    </div>
+                    <div class="add-cart-2">
+                        <div class="add-cart d-flex bg-green align-items-center py-3 justify-content-center">
+                            <h4 class="mt-2 mx-2"><i class="fa-solid fa-cart-shopping"></i> </h4>
+                            <h4 class="mt-2 mx-2"><i class="fa-solid fa-pen-to-square"></i> <span>Add to Wishlist</span></h4>                       
+                            <h4 class="mt-2"><i class="fa-solid fa-arrow-right-arrow-left"></i></h4>
+            
+                            <h3 class="border">Smart Phone Primon v1</h3>
+                        </div>
+                        <!-- <div class="offer">
+                            <p>NEW</p>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/filter5.png" alt="Web Image">
+                
+                    <div class="add-cart bg-grey-2 py-3">
+                        <h5><span class="text-success">$10299</span></h5>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3 class="border">Smart Phone Primon v1</h3>
+                    </div>
+                    <div class="add-cart-2">
+                        <div class="add-cart d-flex bg-green align-items-center py-3 justify-content-center">
+                            <h4 class="mt-2 mx-2"><i class="fa-solid fa-cart-shopping"></i> </h4>
+                            <h4 class="mt-2 mx-2"><i class="fa-solid fa-pen-to-square"></i> <span>Add to Wishlist</span></h4>                       
+                            <h4 class="mt-2"><i class="fa-solid fa-arrow-right-arrow-left"></i></h4>
+            
+                            <h3 class="border">Smart Phone Primon v1</h3>
+                        </div>
+                        <!-- <div class="offer">
+                            <p>NEW</p>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/filter7.png" alt="Web Image">
+                
+                    <div class="add-cart bg-grey-2 py-3">
+                        <h5><span class="text-success">$10299</span></h5>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3 class="border">Smart Phone Primon v1</h3>
+                    </div>
+                    <div class="add-cart-2">
+                        <div class="add-cart d-flex bg-green align-items-center py-3 justify-content-center">
+                            <h4 class="mt-2 mx-2"><i class="fa-solid fa-cart-shopping"></i> </h4>
+                            <h4 class="mt-2 mx-2"><i class="fa-solid fa-pen-to-square"></i> <span>Add to Wishlist</span></h4>                       
+                            <h4 class="mt-2"><i class="fa-solid fa-arrow-right-arrow-left"></i></h4>
+            
+                            <h3 class="border">Smart Phone Primon v1</h3>
+                        </div>
+                        <!-- <div class="offer">
+                            <p>NEW</p>
+                        </div> -->
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
-      </section>
-
-
-    <section class="py-5">
-        <div class="container my-3 text-center desktop">
+      </div>
+      <div class="container-fluid py-3">
+        <div class="container text-center my-3">
             <div class="filter-section bg-green my-4 pt-2">
-              <button class="filter active text-uppercase" data-filter="all">Desktop</button>
-          </div>
-          <div class="row" id="items">
-            <div class="item col-lg-4 col-md-6 col-12" data-category="web">
-                <img src="./images/filter image.png" alt="Web Image">
-                <div class="add-cart d-flex bg-green align-items-center py-3 justify-content-center">
-                    <h4 class="mt-2"><i class="fa-solid fa-cart-shopping"></i></h4>
-                    <i class="fa-solid fa-pen-to-square"></i>
-                    
-                    <h4 class="mt-2"><img src="./images/2 arroy.png" alt="">Add to Compare</h4>
-
-                    <h3 class="border">Smart Phone Primon v1</h3>
-                </div>
-                <div class="offer">
-                    <p>NEW</p>
-                </div>
+                <button class="text-uppercase laptop-btn">Desktop</button>
             </div>
-            <div class="item col-lg-4 col-md-6 col-12" data-category="app">
-                <img src="./images/filter 2.png" alt="Web Image">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="./images/filter image.png" alt="Web Image">
                 
-                <div class="add-cart bg-grey-2 py-3">
-                    <h5><strike class="mr-2">$10000</strike><span class="text-success">$8000</span></h5>
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                    <div class="add-cart bg-grey-2 py-3">
+                        <h5><span class="text-success">$10299</span></h5>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3 class="border">Smart Phone Primon v1</h3>
                     </div>
-                    <h3 class="border">Smart Phone Primon v1</h3>
-
+                    <div class="add-cart-2">
+                        <div class="add-cart d-flex bg-green align-items-center py-3 justify-content-center">
+                            <h4 class="mt-2 mx-2"><i class="fa-solid fa-cart-shopping"></i> </h4>
+                            <h4 class="mt-2 mx-2"><i class="fa-solid fa-pen-to-square"></i> </h4>                       
+                            <h4 class="mt-2"><i class="fa-solid fa-arrow-right-arrow-left"></i> <span>Add to Compare</span></h4>
+            
+                            <h3 class="border">Smart Phone Primon v1</h3>
+                        </div>
+                        <div class="offer offer-2">
+                            <p>NEW</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="item col-lg-4 col-md-6 col-12" data-category="icon">
-                <img src="./images/filter 3.png" alt="Web Image">
+                <div class="item">
+                    <img src="./images/filter 2.png" alt="Web Image">
                 
-                <div class="add-cart bg-grey-2 py-3">
-                    <h5><span class="text-success">$10299</span></h5>
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
+                    <div class="add-cart bg-grey-2 py-3">
+                        <h5><span class="text-success">$10299</span></h5>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3 class="border">Smart Phone Primon v1</h3>
                     </div>
-                    <h3 class="border">Smart Phone Primon v1</h3>
+                    <div class="add-cart-2">
+                        <div class="add-cart d-flex bg-green align-items-center py-3 justify-content-center">
+                            <h4 class="mt-2 mx-2"><i class="fa-solid fa-cart-shopping"></i> </h4>
+                            <h4 class="mt-2 mx-2"><i class="fa-solid fa-pen-to-square"></i> </h4>                       
+                            <h4 class="mt-2"><i class="fa-solid fa-arrow-right-arrow-left"></i> <span>Add to Compare</span></h4>
+            
+                            <h3 class="border">Smart Phone Primon v1</h3>
+                        </div>
+                        <!-- <div class="offer">
+                            <p>NEW</p>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="./images/filter 3.png" alt="Web Image">
+                
+                    <div class="add-cart bg-grey-2 py-3">
+                        <h5><span class="text-success">$10299</span></h5>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3 class="border">Smart Phone Primon v1</h3>
+                    </div>
+                    <div class="add-cart-2">
+                        <div class="add-cart d-flex bg-green align-items-center py-3 justify-content-center">
+                            <h4 class="mt-2 mx-2"><i class="fa-solid fa-cart-shopping"></i> </h4>
+                            <h4 class="mt-2 mx-2"><i class="fa-solid fa-pen-to-square"></i> </h4>                       
+                            <h4 class="mt-2"><i class="fa-solid fa-arrow-right-arrow-left"></i> <span>Add to Compare</span></h4>
+            
+                            <h3 class="border">Smart Phone Primon v1</h3>
+                        </div>
+                        <!-- <div class="offer">
+                            <p>NEW</p>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/filter 2.png" alt="Web Image">
+                
+                    <div class="add-cart bg-grey-2 py-3">
+                        <h5><span class="text-success">$10299</span></h5>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3 class="border">Smart Phone Primon v1</h3>
+                    </div>
+                    <div class="add-cart-2">
+                        <div class="add-cart d-flex bg-green align-items-center py-3 justify-content-center">
+                            <h4 class="mt-2 mx-2"><i class="fa-solid fa-cart-shopping"></i> </h4>
+                            <h4 class="mt-2 mx-2"><i class="fa-solid fa-pen-to-square"></i> </h4>                       
+                            <h4 class="mt-2"><i class="fa-solid fa-arrow-right-arrow-left"></i> <span>Add to Compare</span></h4>
+            
+                            <h3 class="border">Smart Phone Primon v1</h3>
+                        </div>
+                        <!-- <div class="offer">
+                            <p>NEW</p>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/filter 3.png" alt="Web Image">
+                
+                    <div class="add-cart bg-grey-2 py-3">
+                        <h5><span class="text-success">$10299</span></h5>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3 class="border">Smart Phone Primon v1</h3>
+                    </div>
+                    <div class="add-cart-2">
+                        <div class="add-cart d-flex bg-green align-items-center py-3 justify-content-center">
+                            <h4 class="mt-2 mx-2"><i class="fa-solid fa-cart-shopping"></i> </h4>
+                            <h4 class="mt-2 mx-2"><i class="fa-solid fa-pen-to-square"></i> </h4>                       
+                            <h4 class="mt-2"><i class="fa-solid fa-arrow-right-arrow-left"></i> <span>Add to Compare</span></h4>
+            
+                            <h3 class="border">Smart Phone Primon v1</h3>
+                        </div>
+                        <!-- <div class="offer">
+                            <p>NEW</p>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/filter 3.png" alt="Web Image">
+                
+                    <div class="add-cart bg-grey-2 py-3">
+                        <h5><span class="text-success">$10299</span></h5>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3 class="border">Smart Phone Primon v1</h3>
+                    </div>
+                    <div class="add-cart-2">
+                        <div class="add-cart d-flex bg-green align-items-center py-3 justify-content-center">
+                            <h4 class="mt-2 mx-2"><i class="fa-solid fa-cart-shopping"></i> </h4>
+                            <h4 class="mt-2 mx-2"><i class="fa-solid fa-pen-to-square"></i> </h4>                       
+                            <h4 class="mt-2"><i class="fa-solid fa-arrow-right-arrow-left"></i> <span>Add to Compare</span></h4>
+            
+                            <h3 class="border">Smart Phone Primon v1</h3>
+                        </div>
+                        <!-- <div class="offer">
+                            <p>NEW</p>
+                        </div> -->
+                    </div>
                 </div>
             </div>
         </div>
+      </div>
+
+
+
+
+
+      <div class="container-fluid py-4">
+        <div class="container text-center brand">
+            <button type="button" class="btn brand-btn">OUR BRAND</button>
+            <div class="row py-4">
+                <div class="col-lg-2 col-md-4">
+                    <img src="./images/brand-1.png" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <img src="./images/brand-2.png" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <img src="./images/brand-3.png" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <img src="./images/brand-4.png" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <img src="./images/brand-5.png" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <img src="./images/brand-6.png" alt="">
+                </div>
+            </div>
         </div>
-      </section>
+      </div>
+
+      <div class="container-fluid bg-light-grey py-4 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-heading">
+                        <h5 class="text-success">INFORMATION</h5>
+                    </div>
+                    <div class="links d-flex flex-column py-3">
+                        <a href=""><i class="fa-solid fa-caret-right"></i> ABOUT US</a>
+                        <a href=""><i class="fa-solid fa-caret-right"></i> CUSTOMAR SERVICE</a>
+                        <a href=""><i class="fa-solid fa-caret-right"></i> PRIVACY POLICY</a>
+                        <a href=""><i class="fa-solid fa-caret-right"></i> SITE MAP</a>
+                        <a href=""><i class="fa-solid fa-caret-right"></i> CONTACT</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-heading">
+                        <h5 class="text-success">WHY BUY FROM US</h5>
+                    </div>
+                    <div class="links d-flex flex-column py-3">
+                        <a href=""><i class="fa-solid fa-caret-right"></i> ABOUT US</a>
+                        <a href=""><i class="fa-solid fa-caret-right"></i> SHIPPING & RETURNS</a>
+                        <a href=""><i class="fa-solid fa-caret-right"></i> INTERNATIONAL SHIPPING</a>
+                        <a href=""><i class="fa-solid fa-caret-right"></i> AFFILIATES</a>
+                        <a href=""><i class="fa-solid fa-caret-right"></i> GROUP SALES</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-heading">
+                        <h5 class="text-success">MY ACCOUNT</h5>
+                    </div>
+                    <div class="links d-flex flex-column py-3">
+                        <a href=""><i class="fa-solid fa-caret-right"></i> SIGN IN</a>
+                        <a href=""><i class="fa-solid fa-caret-right"></i> VIEW CART</a>
+                        <a href=""><i class="fa-solid fa-caret-right"></i> MY WISHLIST</a>
+                        <a href=""><i class="fa-solid fa-caret-right"></i> TRACK MY ORDER</a>
+                        <a href=""><i class="fa-solid fa-caret-right"></i> HELP</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-heading">
+                        <h5 class="text-success">CONTACT</h5>
+                    </div>
+                    <div class="links d-flex flex-column py-3">
+                        <div class="address d-flex">
+                            <i class="fa-solid fa-location-dot pt-1"></i>
+                            <p class="pl-2">EAST BOX NAGAR,SARULIA<br>DEMRA DHAKA-1361</p>
+                        </div>
+                        <div class="address d-flex">
+                            <i class="fa-solid fa-mobile-screen-button pt-1"></i>
+                            <p class="pl-2">+880 1768760504<br>+880 1735982113</p>
+                        </div>
+                        <div class="address d-flex">
+                            <i class="fa-solid fa-envelope pt-1"></i>
+                            <p class="pl-2">binburhan1@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="container-fluid py-2 bg-grey-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 d-flex align-items-center mb-2">
+                    <button type="button" class="btn brand-btn accept-btn mr-2">WE ACCEPT</button>
+                    <img src="./images/visa.png" alt="" class="img-fluid mr-2">
+                    <img src="./images/master card.png" alt="" class="mr-2">
+                    <img src="./images/american.png" alt="" class="mr-2">
+                    <img src="./images/cirrus.png" alt="">
+                </div>
+                <div class="col-lg-6 col-md-6 d-flex align-items-center mb-2">
+                    <button type="button" class="btn brand-btn accept-btn mr-2">FOLLOW US</button>
+                    <a href=""><img src="./images/facebook.png" alt="" class="img-fluid mr-2"></a>
+                    <a href=""><img src="./images/twitter.png" alt="" class="img-fluid mr-2"></a>
+                    <a href=""><img src="./images/g+.png" alt="" class="img-fluid mr-2"></a>
+                    <a href=""><img src="./images/be.png" alt="" class="img-fluid mr-2"></a>
+                    <a href=""><img src="./images/internet.png" alt="" class="img-fluid mr-2"></a>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="container-fluid py-2 bg-success text-center">
+        <div class="container">
+            <p class="text-white pt-3">Copyright by : company name</p>
+        </div>
+      </div>
 
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/5cac7ad27a.js" crossorigin="anonymous"></script>
 
     <script>
-        $(function(){
+        $(document).ready(function(){
+            $(function(){
             var days    = parseInt( $('.e-m-days').html() );
             var hours   = parseInt( $('.e-m-hours').html() );
             var minutes = parseInt( $('.e-m-minutes').html() );
@@ -437,6 +852,75 @@
     
     
         });
+
+        $('.filter').on('click', function() {
+        var selectedCategory = $(this).data('filter');
+        if (selectedCategory === 'all') {
+          $('.items').stop().fadeOut('slow');
+        $('.items').stop().fadeIn('slow');
+            $('.load').fadeOut('slow')
+        } else {
+            $('.items').stop().fadeOut('slow');
+            $('.items[data-category="' + selectedCategory + '"]').stop().fadeIn('slow');
+        }
+        $( '.filter' ).each(function( ) {
+        if($(this).hasClass('active')){
+            $(this).removeClass('active')
+        }
+    });
+
+    if($(this).hasClass('active')){
+        $(this).removeClass('active')
+    } else {
+        $(this).addClass('active')
+    }
+
+    if(selectedCategory === 'all'){
+      $('.load-btn').show('slow')
+    }else{
+      $('.load-btn').hide('slow')
+    }
+        
+        
+
+    });
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+
+$('.item').mouseenter(function(){
+    $(this).addClass('active')
+})
+$('.item').mouseleave(function(){
+    $(this).removeClass('active')
+})
+
+$('.items').mouseenter(function(){
+    $(this).addClass('active')
+})
+$('.items').mouseleave(function(){
+    $(this).removeClass('active')
+})
+
+        })
+
+
+
+        
     </script>
 
 
