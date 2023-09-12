@@ -24,7 +24,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto pt-2">
                     <li class="nav-item active">
-                      <a class="nav-link active" href="#"><i class="fa-solid fa-house"></i> Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link active" href="index.html"><i class="fa-solid fa-house"></i> Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
                       <a class="nav-link" href="#"><i class="fa-solid fa-user"></i> My Account</a>
@@ -80,8 +80,8 @@
     </div>
     <div class="container-fluid bg-grey py-2">
         <div class="container d-flex align-items-center justify-content-lg-between justify-content-center menu-2 flex-wrap">
-            <a href="">SMART PHONE</a>
-            <a href="" class="active">DESKTOP</a>
+            <a href="" class="active">SMART PHONE</a>
+            <a href="desktop.html">DESKTOP</a>
             <a href="">LAPTOP</a>
             <a href="">ACCESSORIES</a>
             <a href="">NETWORKING</a>
@@ -707,7 +707,7 @@
                         <a href=""><i class="fa-solid fa-caret-right"></i> CUSTOMAR SERVICE</a>
                         <a href=""><i class="fa-solid fa-caret-right"></i> PRIVACY POLICY</a>
                         <a href=""><i class="fa-solid fa-caret-right"></i> SITE MAP</a>
-                        <a href=""><i class="fa-solid fa-caret-right"></i> CONTACT</a>
+                        <a href="contact.html"><i class="fa-solid fa-caret-right"></i> CONTACT</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -796,127 +796,128 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/5cac7ad27a.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 
     <script>
-        $(document).ready(function(){
-            $(function(){
-            var days    = parseInt( $('.e-m-days').html() );
-            var hours   = parseInt( $('.e-m-hours').html() );
-            var minutes = parseInt( $('.e-m-minutes').html() );
-            var seconds = parseInt( $('.e-m-seconds').html() );
+//         $(document).ready(function(){
+//             $(function(){
+//             var days    = parseInt( $('.e-m-days').html() );
+//             var hours   = parseInt( $('.e-m-hours').html() );
+//             var minutes = parseInt( $('.e-m-minutes').html() );
+//             var seconds = parseInt( $('.e-m-seconds').html() );
     
-            var minutesWrap = 0; 
-            var hoursWrap = 0; 
-            var daysWrap; 
-            var hoursRem = hours;
+//             var minutesWrap = 0; 
+//             var hoursWrap = 0; 
+//             var daysWrap; 
+//             var hoursRem = hours;
     
-            var timer = seconds; 
-            var counter =seconds;
+//             var timer = seconds; 
+//             var counter =seconds;
     
-            function countOrdersRemainingTime(){
-                var id = setTimeout(countOrdersRemainingTime, 1000); 
+//             function countOrdersRemainingTime(){
+//                 var id = setTimeout(countOrdersRemainingTime, 1000); 
     
-                if(timer < 0){
-                    minutesWrap ++; 
+//                 if(timer < 0){
+//                     minutesWrap ++; 
     
-                    timer = 59;
+//                     timer = 59;
     
-                }
+//                 }
     
-                var minRem = minutes - minutesWrap; 
+//                 var minRem = minutes - minutesWrap; 
     
-                if( minRem == -1 ){
-                    hoursWrap + 1;
-                    minRem = 59;
-                    var hoursRem = hours - 1;
-                }
+//                 if( minRem == -1 ){
+//                     hoursWrap + 1;
+//                     minRem = 59;
+//                     var hoursRem = hours - 1;
+//                 }
     
-                if(days == 0 && hours == 0 && minutes == 0 && seconds == 0){
-                    clearTimeout(id);
-                }
-    
-    
+//                 if(days == 0 && hours == 0 && minutes == 0 && seconds == 0){
+//                     clearTimeout(id);
+//                 }
     
     
     
     
-                $('.e-m-seconds').html(timer);
-                $('.e-m-minutes').html(minRem);
-                $('.e-m-hours').html(hoursRem);
     
     
-                timer --; 
-            }
+//                 $('.e-m-seconds').html(timer);
+//                 $('.e-m-minutes').html(minRem);
+//                 $('.e-m-hours').html(hoursRem);
     
-            countOrdersRemainingTime();
+    
+//                 timer --; 
+//             }
+    
+//             countOrdersRemainingTime();
     
     
-        });
+//         });
 
-        $('.filter').on('click', function() {
-        var selectedCategory = $(this).data('filter');
-        if (selectedCategory === 'all') {
-          $('.items').stop().fadeOut('slow');
-        $('.items').stop().fadeIn('slow');
-            $('.load').fadeOut('slow')
-        } else {
-            $('.items').stop().fadeOut('slow');
-            $('.items[data-category="' + selectedCategory + '"]').stop().fadeIn('slow');
-        }
-        $( '.filter' ).each(function( ) {
-        if($(this).hasClass('active')){
-            $(this).removeClass('active')
-        }
-    });
+//         $('.filter').on('click', function() {
+//         var selectedCategory = $(this).data('filter');
+//         if (selectedCategory === 'all') {
+//           $('.items').stop().fadeOut('slow');
+//         $('.items').stop().fadeIn('slow');
+//             $('.load').fadeOut('slow')
+//         } else {
+//             $('.items').stop().fadeOut('slow');
+//             $('.items[data-category="' + selectedCategory + '"]').stop().fadeIn('slow');
+//         }
+//         $( '.filter' ).each(function( ) {
+//         if($(this).hasClass('active')){
+//             $(this).removeClass('active')
+//         }
+//     });
 
-    if($(this).hasClass('active')){
-        $(this).removeClass('active')
-    } else {
-        $(this).addClass('active')
-    }
+//     if($(this).hasClass('active')){
+//         $(this).removeClass('active')
+//     } else {
+//         $(this).addClass('active')
+//     }
 
-    if(selectedCategory === 'all'){
-      $('.load-btn').show('slow')
-    }else{
-      $('.load-btn').hide('slow')
-    }
+//     if(selectedCategory === 'all'){
+//       $('.load-btn').show('slow')
+//     }else{
+//       $('.load-btn').hide('slow')
+//     }
         
         
 
-    });
-    $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    dots:false,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:3
-        }
-    }
-})
+//     });
+//     $('.owl-carousel').owlCarousel({
+//     loop:true,
+//     margin:10,
+//     nav:true,
+//     dots:false,
+//     responsive:{
+//         0:{
+//             items:1
+//         },
+//         600:{
+//             items:2
+//         },
+//         1000:{
+//             items:3
+//         }
+//     }
+// })
 
-$('.item').mouseenter(function(){
-    $(this).addClass('active')
-})
-$('.item').mouseleave(function(){
-    $(this).removeClass('active')
-})
+// $('.item').mouseenter(function(){
+//     $(this).addClass('active')
+// })
+// $('.item').mouseleave(function(){
+//     $(this).removeClass('active')
+// })
 
-$('.items').mouseenter(function(){
-    $(this).addClass('active')
-})
-$('.items').mouseleave(function(){
-    $(this).removeClass('active')
-})
+// $('.items').mouseenter(function(){
+//     $(this).addClass('active')
+// })
+// $('.items').mouseleave(function(){
+//     $(this).removeClass('active')
+// })
 
-        })
+//         })
 
 
 

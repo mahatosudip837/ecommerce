@@ -1,0 +1,31 @@
+.best-heading{
+    background: rgb(210,225,177);
+background: linear-gradient(90deg, rgba(210,225,177,1) 0%, rgba(225,227,118,1) 52%, rgba(210,225,177,1) 100%);
+}
+.best-text{
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+.desktop-text{
+    font-size: 12px !important;
+}
+.desktop-star i{
+    font-size: 7px !important;
+}
+.desktop-span span{
+    font-size: 12px;
+}
+.links a{
+    text-decoration: none;
+    color: #000;
+    transition: all .5s ease;
+}
+.links a:hover{
+    color: #7fa522;
+}
+input[type=checkbox] {
+    accent-color: #7fa522;
+}
+.check-with-label:checked + .label-for-check {
+    color: #7fa522;
+  }

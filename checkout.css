@@ -1,0 +1,53 @@
+
+.faq .li {
+    padding: 10px;
+}
+
+.faq .li.q {
+    font-size: 120%;
+    border-bottom: 1px #ccc solid;
+    cursor: pointer;
+}
+
+.faq .li.q{
+    background: #eeeeee;
+    margin-top: 10px;
+}
+
+.faq .li.a {
+    background: #fff;
+    display: none;
+    border: 1px solid #eeeeee;
+}
+.form-line{
+    margin-bottom: 5px;
+}
+.form-line label{
+    width: 26%;
+}
+input.text{
+    background: #eeeeee;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 10px;
+    width: 70%;
+}
+.sign-in-btn input[type="button"]{
+    background: #eeeeee;
+    box-shadow: 0 4px 1px #d3d3d3;
+    color: #000;
+    padding: 4px 40px;
+}
+.continue-btn input[type="button"]{
+    padding: 4px 40px;
+}
+.text-grey{
+    color: #999999;
+}
+.text-grey.a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}

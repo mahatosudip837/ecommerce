@@ -1,0 +1,36 @@
+.contact-info{
+    border-bottom: 2px solid #929292;
+}
+.contact-info p{
+    font-weight: 700;
+    font-size: 18px;
+    color: #444444;
+    letter-spacing: 1px;
+}
+.contact-para p{
+    color: #867f7f;
+}
+form .name-form input{
+    width: 49%;
+    padding: 10px;
+    border: 1px solid #7e7e7e;
+}
+form .textarea textarea{
+    width: 98.5%;
+    resize: none;
+    padding: 10px;
+    border: 1px solid #7e7e7e;
+}
+input[type="button"]{
+    padding: 6px 25px;
+    border: none;
+    outline: none;
+    background: #709b1d;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0 4px 1px #58800b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    font-size: 20px;
+}

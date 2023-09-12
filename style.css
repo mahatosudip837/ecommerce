@@ -237,6 +237,7 @@ li{
     border-radius: 3px 3px 0 0;
     color: #fff;
     padding: 5px;
+    font-size: 14px;
 }
 .offer{
     position: absolute;
@@ -438,9 +439,6 @@ li{
         font-size: 12px;
         padding: 10px 10px;
     }
-    .star{
-        left: 30%;
-    }
 }
 @media screen and (max-width:992px){
     .offer-section .circle{
@@ -493,3 +491,7 @@ li{
         width: 10px;
     }
 }
+
+
+
+
