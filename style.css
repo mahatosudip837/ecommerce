@@ -59,6 +59,19 @@ li {
   text-align: center;
   color: #fff;
 }
+.shopping-cart-new{
+  position: relative;
+}
+/* .shopping-cart-new .box{
+  position: absolute;
+  top: 100%;
+  right: 0;
+  height: 200px;
+  width: 250px;
+  padding: 10px;
+  background: #ffffff;
+  z-index: 100;
+} */
 .search {
   border-radius: 0;
 }
