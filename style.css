@@ -23,7 +23,8 @@ li {
   margin-right: 5px;
 }
 .dropdown-menu {
-  min-width: 7rem !important;
+  min-width: 0 !important;
+  padding: 0 15px;
 }
 .nav-item > a:hover,
 .nav-item > a.active,
@@ -539,5 +540,17 @@ li {
 @media screen and (max-width: 360px) {
   .card-payment img {
     width: 40px;
+  }
+}
+@media screen and (max-width:576px){
+  form .name-form input{
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+  form .textarea textarea{
+    width: 100% !important;
+  }
+  .name-form{
+    margin-bottom: 0 !important;
   }
 }

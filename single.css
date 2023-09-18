@@ -258,6 +258,12 @@
     width: 100%;
     display: block;
 }
+.et_pb_text_inner h2{
+    font-size: 16px;
+}
+.right-new i{
+    font-size: 12px;
+}
 
 @media screen and (min-width:576px) and (max-width:768px){
     .container{
@@ -269,7 +275,7 @@
         grid-template-columns: 1fr;
     }
     .product-imgs{
-        width: 50%;
+        width: 75%;
         margin: 0 auto;
     }
 }
@@ -281,5 +287,8 @@
     }
 }
 @media screen and (max-width:524px){
-    
+    .secList{
+        padding: 0.3em 5px;
+        font-size: 12px;
+    }
 }

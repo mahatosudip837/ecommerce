@@ -34,3 +34,11 @@ input[type="button"]{
     margin-top: 10px;
     font-size: 20px;
 }
+.name-form{
+    margin-bottom: 10px;
+}
+@media screen and (max-width:992px){
+    input[type="button"]{
+        margin-bottom:10px;
+    }
+}
