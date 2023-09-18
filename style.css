@@ -22,7 +22,7 @@ li {
   text-decoration: none;
   margin-right: 5px;
 }
-.dropdown-menu{
+.dropdown-menu {
   min-width: 7rem !important;
 }
 .nav-item > a:hover,
@@ -496,10 +496,9 @@ li {
   .right p {
     font-size: 10px;
   }
-
 }
-@media screen and (max-width:426px){
-  ul li.nav-link{
+@media screen and (max-width: 426px) {
+  ul li a.nav-link {
     font-size: 9px;
   }
 }
@@ -509,8 +508,8 @@ li {
     width: 10px;
   }
 }
-@media screen and (max-width:360px){
-  .card-payment img{
+@media screen and (max-width: 360px) {
+  .card-payment img {
     width: 40px;
   }
 }
