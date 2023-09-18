@@ -473,6 +473,12 @@ li {
     letter-spacing: 1px;
   }
 }
+@media screen and (min-width:576px) and (max-width:767px){
+  .container{
+    max-width: 718px !important;
+  }
+
+}
 @media screen and (max-width: 500px) {
   .subscribe button {
     font-size: 10px;
@@ -506,6 +512,9 @@ li {
   .carousel-indicators li {
     height: 10px;
     width: 10px;
+  }
+  .menu-2 a {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 360px) {
