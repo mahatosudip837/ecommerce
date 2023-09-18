@@ -5,10 +5,6 @@
     grid-gap: 1.5rem;
     border: none;
 }
-img{
-    width: 100%;
-    display: block;
-}
 .img-display{
     overflow: hidden;
 }
@@ -250,3 +246,37 @@ img{
   .et_pb_text_inner {
     background-color: #eeeeee;
   }
+.text-grey{
+    color: #c5c5c5;
+}
+.comment-title .left span{
+    margin-right: 5px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.product-imgs img{
+    width: 100%;
+    display: block;
+}
+
+@media screen and (min-width:576px) and (max-width:768px){
+    .container{
+        max-width: 730px !important;
+    }
+}
+@media screen and (max-width:651px){
+    .card{
+        grid-template-columns: 1fr;
+    }
+    .product-imgs{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:767px){
+    .brand img{
+        width: 30%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
