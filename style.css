@@ -496,10 +496,21 @@ li {
   .right p {
     font-size: 10px;
   }
+
+}
+@media screen and (max-width:426px){
+  ul li.nav-link{
+    font-size: 9px;
+  }
 }
 @media screen and (max-width: 768px) {
   .carousel-indicators li {
     height: 10px;
     width: 10px;
+  }
+}
+@media screen and (max-width:360px){
+  .card-payment img{
+    width: 40px;
   }
 }
