@@ -116,4 +116,23 @@ $('.items').mouseleave(function(){
 $(this).removeClass('active')
 })
 
+$('.fa-pen-to-square').click(function(){
+    $('.shopping-cart-new .box').toggle();
 })
+$('.fa-cart-shopping').click(function(){
+    $('.shopping-cart-new2 .box').toggle();
+})
+
+})
+$(document).mouseup(function (e) {
+    if ($(e.target).closest(".shopping-cart-new .box").length
+    === 0) {
+    $(".shopping-cart-new .box").hide();
+    }
+});
+$(document).mouseup(function (e) {
+    if ($(e.target).closest(".shopping-cart-new2 .box").length
+    === 0) {
+    $(".shopping-cart-new2 .box").hide();
+    }
+});
